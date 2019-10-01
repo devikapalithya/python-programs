@@ -36,7 +36,15 @@ def get_updates(offset=None):
         url += "&offset={}".format(offset)
     js = get_json_from_url(url)
     return js
-
+public class PrintGenericTest {
+    public static void main(String[] args) {
+ 
+      PrintGeneric.printAnyType(new Integer(10));   // Print an integer
+      PrintGeneric.printAnyType(new Double(10.5));  // Print a double
+      PrintGeneric.printAnyType(new Character('c')); // Print a character
+      PrintGeneric.printAnyType(new String("generics")); // Print a string
+    }
+  }
 
 def get_last_chat_id_and_text(updates):
     num_updates = len(updates["result"])
