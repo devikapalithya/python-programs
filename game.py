@@ -211,6 +211,18 @@ while run:
     redrawGameWindow()
 
 pygame.quit()
+public class BoxDriver {
+  public static void main(String[] args) { 
+     Box<Integer> integerBox = new Box<Integer>(); // Use Integer not int
+     Box<String> stringBox = new Box<String>();
+     Box<Point> pointBox = new Box<Point>();
+     Box<Line> lineBox = new Box<Line>();
+
+     integerBox.set(new Integer(10));
+     stringBox.set(new String("Hello World"));
+     pointBox.set(new Point(2,3));
+     lineBox.set(new Point(), new Point(2,3));
+ 
 
 
 
